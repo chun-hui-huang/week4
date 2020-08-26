@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo img{
+    display: block;
+    height: 40px;
+    width: 100%;
+}
+.dropdown{
+    display: none;
+}
+.header ul{
+    display: flex;
+}
+.header li{
+    margin-right: 60px;
+    padding-top: 5px;
+}
+.header a{
+    color: #3F5D45;
+    text-decoration: none;
+}
+.header img{
+    display: block;
+}
+.banner{
+    margin-bottom: 60px;
+}
+.banner img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.list h2{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    padding: 16px 0;
+}
+.list li{
+    border: #EAF0ED solid 1px;
+}
+.list li a{
+    display: block;
+    text-decoration: none;
+    color: #3F5D45;
+    padding: 16px 0;
+}
+.list li a:hover{
+    background-color: #EAF0ED;
+}
+.listclick{
+    background-color: #EAF0ED;
+}
+.content{
+    width: 68%;
+    margin-left: 20px;
+}
+.dessert{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dessert span{
+    border: #EAF0ED 1px solid;
+}
+.dessert li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.product{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.dessert li p{
+    position: absolute;
+    left: 20px;
+    width: 16px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 10px;
+    background-color: #3F5D45;
+    color: #EAF0ED; 
+    letter-spacing: 5px;
+}
+.favorite{
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.item h3{
+    color: #3F5D45;
+    padding: 14px 33px;
+    border-top: #EAF0ED 1px solid;
+    border-left: #EAF0ED 1px solid;
+    border-bottom: #EAF0ED 1px solid;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 20px;
+}
+.item span{
+    color: #3F5D45;
+    padding: 14px 20px 14px 25px;
+    border: #EAF0ED 1px solid;
+    font-size: 20px;
+    line-height: 24px;
+}
+.cart{
+    display: block;
+    background-color: #EAF0ED;
+    padding: 16px 90px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3F5D45;
+    text-decoration: none;
+}
+.cart:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.arrow{
+    border: #EAF0ED 1px solid;
+    padding: 18px;
+}
+.arrow:hover{
+    background-color: #EAF0ED;
+}
+.numberclick a{
+    border: #3F5D45 1px solid;
+    padding: 19px 26px;
+    text-decoration: none;
+    background-color: #3F5D45;
+    font-weight: bold;
+    color: #EAF0ED;
+    font-size: 20px;
+}
+.number a{
+    border: #EAF0ED 1px solid;
+    padding: 19px 26px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #3F5D45;
+}
+.number a:hover{
+    background-color: #3F5D45;
+    font-weight: bold;
+    color: #EAF0ED;
+}
+.footerbox{
+    width: 1024px;
+    margin: 0 auto;
+}
+.mail{
+    background-color: #3F5D45;
+    display: flex;
+    justify-content: space-around;
+}
+.mail-logo{
+    display: flex;
+    align-items: center; 
+}
+.mail-logo img{
+    width: 40px;
+    height: 40px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.mail-logo p{
+    color: #EAF0ED;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 42px;
+    padding-bottom: 42px;
+}
+.mail-search{
+    display: flex;
+    padding: 30px 0;
+    position: relative;
+    width: 30%;
+}
+.mail-icon{
+    position: absolute;
+    top: 46px;
+    left: 20px;
+    background-color: #eaf0ed;
+}
+button{
+    background:#FFE180;
+    border: none;
+    cursor: pointer;
+    padding: 16px 20px;
+}
+.email{
+    background-color: #EAF0ED;
+    border: none;
+    width: 100%;
+    padding: 16px 0;
+}
+.footer{
+    background:#EAF0ED;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 38px;
+}
+.sweetaste{
+    height: 26px;
+    max-width: auto;
+}
+.information p{
+    color: #3F5D45;
+    line-height: 24px;
+    margin-top: 115px;
+}
+.icon{
+    margin: 30px 0;
+    height: 32px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    color:#3F5D45;
+    font-family:  Times;
+
+}
+.vertical{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 1.5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+.copyright{
+    margin-top: 50px;
+}
+
+/*媒體查詢*/
+/*max-width:992px*/
+
+@media(max-width:992px){
+    .container{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .dropdown{
+        display: block;
+    }
+    .header li{
+        display: none;
+    }
+    .main{
+        flex-wrap:wrap;
+    }
+    .list{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .list li a{
+        padding: 10px 0;
+    }
+    .content{
+        width: 100%;
+        margin: 0 5%;
+    }
+    .dessert li{
+        width: 45%;
+    }
+    .footerbox{
+        width: 100%;
+    }
+    .mail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mail-search{
+        width: 80%;
+    }
+    
+    
+}
+
+/*max-width:576px*/
+@media(max-width:576px){
+    .main{
+        flex-wrap: wrap;
+    }
+    .list li a{
+        padding: 16px 0;
+    }
+    .content{
+        width: 100%;
+        margin: 0 5%;
+    }
+    .dessert li{
+        width: 95%;
+    }
+    .footer{
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .vertical{
+        display: none;
+    }
+    .copyright{
+        margin-bottom:50px;
+    }
+   
+}
